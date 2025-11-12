@@ -8,4 +8,6 @@ class Menu:
 
 
     def run(self, ):
+        self.window.blit(source=self.surf, dest=self.rect)
+        pygame.display.flip()
         pass
