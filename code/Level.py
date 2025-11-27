@@ -37,6 +37,8 @@ class Level:
                 if event.type == pygame.QUIT:
                     pygame.quit()
                     sys.exit()
+                if event.type == EVENT_ENEMY:
+                    self.entity_list.append(EntityFactory.get_entity('Enemy1'))
 
             #Printed text
             self.level_text(14,f'{self.name} - Timeout: {self.timeout / 1000 :.1f}s', COLOR_WHITE,(10, 5))
